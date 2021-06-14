@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div class="container">
+    <div class='row py-3'>
+        <div class="col-md-7 mx-auto" style="background-color: rgb(235, 229, 229);">
+            <form class="p-3" [formGroup]="empForm" (ngSubmit)="onEmpSubmit()">
+                <h1 class="text-center">Contact Us</h1>
+                <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input type="text" 
+                  class="form-control" id="fname" 
+                  placeholder="Enter firstName"
+                  formControlName="fname">
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input type="text" class="form-control" id="lname"
+                  formControlName="lname" placeholder="Enter LastName">
+                </div>
+                <div class="form-group">
+                    <label for="Textarea">Enter Address</label>
+                    <textarea class="form-control" 
+                    formControlName="address"
+                    id="Textarea" rows="2"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneno"> Mobile Number</label>
+                    <input type="number" 
+                    formControlName="phoneno"
+                    class="form-control" id="phoneno" placeholder="Enter Mobile number">
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
+        </div>
+
+    </div>
+
+</div>
+<app-footer></app-footer>

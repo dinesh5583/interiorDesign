@@ -1,0 +1,80 @@
+<app-header></app-header>
+<div class="container py-5">
+    <h2>Contact List</h2>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">S.no</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Mobile Number</th>
+                <th scope="col">Address</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let emp of employees;index as i">
+                <th scope="row">{{i+1}}</th>
+                <td>{{emp.fname}}</td>
+                <td>{{emp.lname}}</td>
+                <td>{{emp.phoneno}}</td>
+                <td>{{emp.address}}</td>
+                <td>
+                  <button (click)="onDeleteEmployees(emp._id)" class="btn btn-danger btn-sm mr-4">Delete</button>
+                  <button (click)="onEditEmployee(emp)" data-toggle="modal" data-target="#editModal" class="btn btn-danger btn-sm">Edit</button>
+                
+                </td>
+                
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+</div>
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="p-3" [formGroup]="empForm" (ngSubmit)="onEmpSubmit()">
+          <h1 class="text-center">Edit Customer</h1>
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" 
+            class="form-control" id="fname" 
+            placeholder="Enter firstName"
+            formControlName="fname">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname"
+            formControlName="lname" placeholder="Enter LastName">
+          </div>
+          <div class="form-group">
+              <label for="Textarea">Enter Address</label>
+              <textarea class="form-control" 
+              formControlName="address"
+              id="Textarea" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="phoneno"> Mobile Number</label>
+              <input type="number" 
+              formControlName="phoneno"
+              class="form-control" id="phoneno" placeholder="Enter Mobile number">
+            </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

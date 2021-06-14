@@ -1,0 +1,229 @@
+<app-header></app-header>
+<div
+class="banner-kitchen d-flex align-items-center justify-content-center pl-3 pl-lg-5 text-center"
+>
+<div>
+  <h1 class="text-capitalize text-yellow text-slanted display-4">
+    Dream Decor
+  </h1>
+  <h1 class="text-capitalize font-weight-bold display-4">
+    Modular kitchen Design
+  </h1>
+</div>
+</div>
+
+
+<section class="products py-5">
+    <div class="container">
+        <div class="row">
+      <!-- single product -->
+      <div class="mx-auto col-md-6 col-lg-4">
+        <div class="featured-container m-2">
+          <img src="../assets/img/img-products/kitchen1.webp" class="img-fluid" alt="product" #inputinfo1/>
+          <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"
+           (click)="getImage(inputinfo1,inputName1)">
+            <i class="fas fa-search"></i>
+          </span>
+          <a href="#" class="featured-store-link text-captilaze">add to cart</a>
+        </div>
+        <h6 class="text-capitalize text-center my-2" #inputName1>Mango Themed L-Shaped Modular Kitchen</h6>
+        <h6 class="text-center">
+          <span class="text-muted old-price mx-2"><i class="fa fa-inr"></i>200</span>
+          <span>$100</span>
+        </h6>
+      </div>
+      <!-- end single product -->
+       <!-- single product -->
+       <div class="mx-auto col-md-6 col-lg-4">
+        <div class="featured-container m-2">
+          <img src="../assets/img/img-products/kitchen2.webp" class="img-fluid" alt="product" #inputinfo2/>
+          <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"
+          (click)="getImage(inputinfo2,inputName2)">
+            <i class="fas fa-search"></i>
+          </span>
+          <a href="#" class="featured-store-link text-captilaze">add to cart</a>
+        </div>
+        <h6 class="text-capitalize text-center my-2" #inputName2>Sky Blue Straight Modular Kitchen</h6>
+        
+        <h6 class="text-center">
+          <span class="text-muted old-price mx-2">$200</span>
+          <span>$100</span>
+        </h6>
+      </div>
+      <!-- end single product -->
+      <!-- single product -->
+      <div class="mx-auto col-md-6 col-lg-4">
+        <div class="featured-container m-2">
+          <img src="../assets/img/img-products/kitchen3.webp" class="img-fluid" alt="product" #inputinfo3/>
+          <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"
+          (click)="getImage(inputinfo3,inputName3)">
+            <i class="fas fa-search"></i>
+          </span>
+          <a href="#" class="featured-store-link text-captilaze">add to cart</a>
+        </div>
+        <h6 class="text-capitalize text-center my-2" #inputName3>Summer Soothe Straight Modular Kitchen</h6>
+        <h6 class="text-center">
+          <span class="text-muted old-price mx-2">$200</span>
+          <span>$100</span>
+        </h6>
+      </div>
+      <!-- end single product -->
+      <!-- single product -->
+      <div class="mx-auto col-md-6 col-lg-4">
+        <div class="featured-container m-2">
+          <img src="../assets/img/img-products/kitchen4.webp" class="img-fluid" alt="product" #inputinfo4/>
+          <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"
+          (click)="getImage(inputinfo4,inputName4)">
+            <i class="fas fa-search"></i>
+          </span>
+          <a href="#" class="featured-store-link text-captilaze">add to cart</a>
+        </div>
+        <h6 class="text-capitalize text-center my-2" #inputName4>Citrus Mood L-Shaped Modular Kitchen</h6>
+        <h6 class="text-center">
+          <span class="text-muted old-price mx-2">$200</span>
+          <span>$100</span>
+        </h6>
+      </div>
+      <!-- end single product -->
+      <!-- single product -->
+      <div class="mx-auto col-md-6 col-lg-4">
+        <div class="featured-container m-2">
+          <img src="../assets/img/img-products/kitchen5.webp" class="img-fluid" alt="product" #inputinfo5/>
+          <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"
+           (click)="getImage(inputinfo5,inputName5)">
+            <i class="fas fa-search"></i>
+          </span>
+          <a href="#" class="featured-store-link text-captilaze">add to cart</a>
+        </div>
+        <h6 class="text-capitalize text-center my-2" #inputName5>Dark Envy U-Shaped Modular Kitchen</h6>
+        <h6 class="text-center">
+          <span class="text-muted old-price mx-2">$200</span>
+          <span>$100</span>
+        </h6>
+      </div>
+      <!-- end single product -->
+      <!-- single product -->
+      <div class="mx-auto col-md-6 col-lg-4">
+        <div class="featured-container m-2">
+          <img src="../assets/img/img-products/kitchen6.webp" class="img-fluid" alt="product" #inputinfo6/>
+          <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"
+           (click)="getImage(inputinfo6,inputName6)">
+            <i class="fas fa-search"></i>
+          </span>
+          <a href="#" class="featured-store-link text-captilaze">add to cart</a>
+        </div>
+        <h6 class="text-capitalize text-center my-2" #inputName6>Dark L-Shaped Black and Red Modular Kitchen</h6>
+        <h6 class="text-center">
+          <span class="text-muted old-price mx-2">$200</span>
+          <span>$100</span>
+        </h6>
+      </div>
+      <!-- end single product -->
+       <!-- single product -->
+       <div class="mx-auto col-md-6 col-lg-4">
+        <div class="featured-container m-2">
+          <img src="../assets/img/img-products/kitchen7.webp" class="img-fluid" alt="product" #inputinfo7/>
+          <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"
+           (click)="getImage(inputinfo7,inputName7)">
+            <i class="fas fa-search"></i>
+          </span>
+          <a href="#" class="featured-store-link text-captilaze">add to cart</a>
+        </div>
+        <h6 class="text-capitalize text-center my-2" #inputName7>Nature Bliss Straight Modular Kitchen</h6>
+        <h6 class="text-center">
+          <span class="text-muted old-price mx-2">$200</span>
+          <span>$100</span>
+        </h6>
+      </div>
+      <!-- end single product -->
+       <!-- single product -->
+       <div class="mx-auto col-md-6 col-lg-4">
+        <div class="featured-container m-2">
+          <img src="../assets/img/img-products/kitchen8.webp" class="img-fluid" alt="product" #inputinfo8/>
+          <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"
+           (click)="getImage(inputinfo8,inputName8)">
+            <i class="fas fa-search"></i>
+          </span>
+          <a href="#" class="featured-store-link text-captilaze">add to cart</a>
+        </div>
+        <h6 class="text-capitalize text-center my-2" #inputName8>Passion Flower L-Shaped Modular Kitchen</h6>
+        <h6 class="text-center">
+          <span class="text-muted old-price mx-2">$200</span>
+          <span>$100</span>
+        </h6>
+      </div>
+      <!-- end single product -->
+       <!-- single product -->
+       <div class="mx-auto col-md-6 col-lg-4">
+        <div class="featured-container m-2">
+          <img src="../assets/img/img-products/kitchen9.webp" class="img-fluid" alt="product" #inputinfo9/>
+          <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"
+          (click)="getImage(inputinfo9,inputName9)">
+            <i class="fas fa-search"></i>
+          </span>
+          <a href="#" class="featured-store-link text-captilaze">add to cart</a>
+        </div>
+        <h6 class="text-capitalize text-center my-2" #inputName9>Red Velvet L-Shaped Modular Kitchen</h6>
+        <h6 class="text-center">
+          <span class="text-muted old-price mx-2">$200</span>
+          <span>$100</span>
+        </h6>
+      </div>
+      <!-- end single product -->
+     
+      </div>
+      </div>
+</section>
+
+
+
+ <!-- modal -->
+    <!-- modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <!-- modal header -->
+            <div class="modal-header">
+              <h5 class="modal-title text-capitalize">product info</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!--end of  modal header -->
+            <!-- modal body -->
+            <div class="modal-body">
+              <div class="row">
+                <div class="col text-center">
+                  <img [src]="imageURL" class="img-fluid" alt="" width="70%"/>
+                  <!-- ratings -->
+                  <div class="ratings">
+                    <span class="rating-icon"><i class="fas fa-star"></i></span>
+                    <span class="rating-icon"><i class="fas fa-star"></i></span>
+                    <span class="rating-icon"><i class="fas fa-star"></i></span>
+                    <span class="rating-icon"><i class="fas fa-star"></i></span>
+                    <span class="rating-icon"><i class="far fa-star"></i></span>
+                    <span class="text-capitalize">(25 customer reviews)</span>
+                  </div>
+                  <!-- end of ratings -->
+                  <h4 class="text-capitalize my-2">{{imageName}}</h4>
+                  <h2>$10.00 - $200.00</h2>
+                  <p class="lead text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+                    porro.
+                  </p>
+                 
+                  
+                  <div class="text-center">
+                    <button class="btn btn-warning my-2 mx-2">add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end modal body -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>

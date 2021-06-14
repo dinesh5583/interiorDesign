@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
+/* GENERAL STYLES */
+:root {
+  --mainYellow: #fdbe02;
+  --mainWhite: #fff;
+  --mainBlack: #071013;
+  --mainGrey: #9b9999;
+  --mainGreen: #61e786;
+  --TransGrey: rgba(0, 0, 0, 0.1);
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Mali", cursive;
+}
+.text-slanted {
+  font-family: "Calligraffitti", cursive;
+  font-size: 1.2rem;
+ 
+}
+.text-yellow {
+  color: var(--mainYellow);
+}
+.btn-yellow {
+  background: var(--mainYellow);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  border-radius: 0 !important;
+}
+.btn-yellow:hover {
+  background: var(--mainBlack);
+  color: var(--mainYellow);
+}
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainBlack);
+}
+.btn-black:hover {
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+}
+.banner-products {
+  min-height: 60vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../img/pageBcg/productsBcg.jpeg") center/cover fixed no-repeat;
+}
+
+
+/* #######################HomePage############### */
+/* navbar */
+.navbar-toggler {
+  outline: none !important;
+  border: none;
+  font-size: 2.2rem;
+  color: var(--mainYellow) !important;
+}
+.navbar{
+  box-shadow: 2px 2px rgb(165, 165, 165);
+}
+.nav-link {
+  font-size: 1.12rem;
+  border-bottom: 0.1rem solid var(--mainWhite);
+}
+.nav-link:hover{
+  border-bottom: 0.1rem solid var(--mainYellow);
+}
+.nav-active {
+  border-bottom: 0.1rem solid var(--mainYellow);
+}
+.navbar-icon {
+  font-size: 1.6rem;
+}
+.navbar-cart-icon {
+  color: var(--mainBlack);
+  position: relative;
+}
+.navbar-cart-icon:hover {
+  color: var(--mainGrey);
+}
+.cart-items {
+  color: var(--mainWhite);
+  position: absolute;
+  top: -15%;
+  right: -25%;
+  padding: 0.2rem 0.3rem;
+  background: var(--mainYellow);
+  font-size: 0.1rem;
+  border-radius: 50%;
+}
+/* banner  */
+.banner {
+  min-height: calc(100vh - 101px);
+  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../img/pageBcg/bannerBcg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+.banner a{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+/* services */
+.service-icon {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--mainYellow);
+  background: var(--mainGrey);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+}
+/* categories */
+.categories-link {
+  color: var(--mainBlack);
+  text-decoration: none;
+}
+.categories-link:hover {
+  color: var(--mainGrey);
+  text-decoration: none;
+}
+.categories-underline {
+  height: 0.1rem;
+  width: 5rem;
+  background: var(--mainYellow);
+}
+.category-container {
+  position: relative;
+}
+.category-img {
+  transition: all 1s linear;
+}
+.category-container:hover .category-img {  /* only image will be hover */
+  opacity: 0.5;
+}
+.category-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.2rem 3rem 0.2rem 0.2rem;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  opacity: 0;
+  transition: all 1s linear;
+  text-decoration: none !important;
+}
+.category-link:hover {
+  color: var(--mainGrey);
+}
+.category-container:hover .category-link {
+  opacity: 1;
+}
+/* gallery section */
+.text-green {
+  color: var(--mainGreen);
+}
+.text-slant {
+  font-family: "Caveat", cursive;
+}
+.title-underline {
+  width: 12rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 2rem;
+}
+.title-underline__center {
+  position: absolute;
+  height: 0.6rem;
+  background: var(--mainGreen);
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+.gallery{
+  background: rgb(241, 241, 241);
+}
+.gallery-btn:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.gallery-img-container {
+  position: relative;
+  transition: all 1s linear;
+  overflow: hidden;
+}
+.gallery-img-container:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.gallery-img {
+  transition: all 1s linear;
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.4;
+}
+.gallery-info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+.gallery-info:hover {
+  text-decoration: none;
+  color: var(--mainDark);
+}
+.gallery-img-container:hover .gallery-info {
+  transform: translate(-50%, 0);
+}
+
+.gallery-icon {
+  position: absolute;
+  color: var(--mainWhite);
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+/* owl carousel */
+.owl-prev{
+  left: -30px;
+
+}
+.owl-next{
+  right: -30px;
+}
+.owl-prev, .owl-next{
+  position: absolute;
+  top: 20%;
+}
+.owl-prev span, .owl-next span{
+  font-size: 60px;
+  color: #787878;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover{
+   background-color: transparent;
+}
+.owl-carousel img{
+  border-radius: 5%;
+}
+
+.kitchen-link {
+  color: var(--mainBlack);
+  text-decoration: none;
+}
+.kitchen-link:hover {
+  color: var(--mainBlack);
+  text-decoration: none;
+}
+.kitchen-container {
+  position: relative;
+}
+.kitchen-img {
+  transition: all 1s linear;
+}
+.kitchen-container:hover .kitchen-img{
+  opacity: 0.5;
+}
+.kitchen-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.2rem 3rem 0.2rem 0.2rem;
+  
+  color: var(--mainBlack);
+  
+  opacity: 0;
+  transition: all 0.5s linear;
+  text-decoration: none !important;
+}
+.kitchen-container:hover .kitchen-link{
+  opacity: 1;
+}
+
+
+/* ################## Customer############### */
+/* customer */
+
+.customer-card-body{
+  margin-top: -4rem!important;
+  color: var(--mainGrey);
+}
+.customer-img{
+  border:0.4rem solid var(--mainWhite);
+}
+.customer-name{
+  color: blue;
+  margin: 0.5rem;
+}
+.customer-icon{
+  font-size: 2rem;
+  color: var(--mainGrey);
+}
+.customer-quote{
+  max-width: 90%;
+}
+
+/* footer */
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+}
+.footer-title {
+  border: 0.2rem solid var(--mainYellow);
+  padding: 0.4rem;
+}
+.footer-icon {
+  color: var(--mainYellow);
+}
+.footer-icon:hover {
+  color: var(--mainWhite);
+}
+
+
+/* partners */
+.partners {
+  background: var(--TransGrey);
+}
+.carousel-control-prev {
+  font-size: 2.5rem;
+  color: var(--mainBlack);
+  transform: translateX(-200%);
+}
+.carousel-control-next {
+  font-size: 2.5rem;
+  color: var(--mainBlack);
+  transform: translateX(200%);
+}
+
+/* ####################### MOdular Kitchen ############### */
+.banner-kitchen {
+  min-height: 60vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../img/pageBcg/kitchen.jpg") center/cover fixed no-repeat;
+}
+.featured-container {
+  background: var(--TransGrey);
+  position: relative;
+  overflow: hidden;
+}
+.featured-search-icon {
+  background: var(--mainWhite);
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 1.2rem;
+  transform: translateX(110%);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.featured-container:hover .featured-search-icon {
+  transform: translateX(0%);
+}
+.featured-store-link {
+  background: var(--mainYellow);
+  color: var(--mainBlack);
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 70%;
+  transform: translateX(110%);
+  transition: all 1s ease-in-out;
+}
+.featured-store-link:hover {
+  color: var(--mainBlack);
+}
+.featured-container:hover .featured-store-link {
+  transform: translateX(0%);
+}
+.old-price {
+  text-decoration: line-through;
+}
+/* ##############END OF Kitchen #################### */
+
+/* ####################### MOdular BEDROOM ############### */
+.banner-bedroom {
+  min-height: 60vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../img/pageBcg/storeBcg.jpeg") center/cover fixed no-repeat;
+}
